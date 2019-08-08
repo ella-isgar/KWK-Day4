@@ -49,23 +49,42 @@ class FacebookProfile {
     
     
     
-    
     //ITERATION 2: Functions that lets user update properties of their facebook profile -- In other languages, these are sometimes called "Setter" Functions.
     
     //Step 0: Write a function that lets user update their bio
     /*****YOUR CODE GOES HERE*****/
     
+    func updateStatus (status : String) {
+        print("\(status)")
+    }
+    
     //Step 1: Write a function that lets user update their userName
     /*****YOUR CODE GOES HERE*****/
+    
+    func updateUsername (username : String) {
+        print("\(username)")
+    }
     
     //Step 2: Write a function that lets user update their friendCount
     /*****YOUR CODE GOES HERE*****/
     
+    func updateFriendCount (friendCount : Int) {
+        print("\(friendCount)")
+    }
+    
     //Step 3: Write a function that lets user update their birthday
     /*****YOUR CODE GOES HERE*****/
     
+    func updateBirthday (birthday : String) {
+        print("\(birthday)")
+    }
+    
     //Step 4: Write a function that lets user update their relationshipStatus
     /*****YOUR CODE GOES HERE*****/
+    
+    func updateRelationStatus (relationStatus : String) {
+        print("\(relationStatus)")
+    }
     
     //Step 5: "Set" the properties of the facebook profile using each function.
     //Step 6: Call these functions to make sure that they work.
@@ -106,7 +125,14 @@ var profile1 = FacebookProfile(USERNAME: "ellai", LOCATION: "brooklyn", STATUS: 
 print(profile1.friendCount)
 
 print(profile1.relationStatus)
+
+print("")
 //Iteration 2 Test
+profile1.updateFriendCount(friendCount: 100)
+profile1.updateUsername(username: "eri")
+profile1.updateRelationStatus(relationStatus: "FINESSINNNNNN'...")
+profile1.updateBirthday(birthday: "idk bro, nov 76th. 2056")
+profile1.updateStatus(status: "chi")
 
 
 //Iteration 3 Test
