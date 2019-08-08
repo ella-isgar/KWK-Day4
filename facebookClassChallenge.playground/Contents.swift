@@ -13,6 +13,8 @@ class FacebookProfile {
     var age : Int
     var name : String
     var birthday : String
+    var friendCount : Int
+    var relationStatus : String
     
     //Step 2: Create an object from the class outside of the class (see below).
     
@@ -24,13 +26,24 @@ class FacebookProfile {
     
     //ITERATION 1: Add an initializer so that we can create multiple facebook profiles.
     
-    
     //Step 0: Generate an initializer based on the variable properties and constant properties.
     //Note: You may need to change the properties you created in Iteration 0!
     /*****YOUR CODE GOES HERE*****/
+    init(USERNAME : String, LOCATION : String, STATUS : String, AGE : Int, NAME : String, BIRTHDAY : String, FRIENDCOUNT : Int, RELATIONSTATUS : String) {
+        username = USERNAME
+        location = LOCATION
+        status = STATUS
+        age = AGE
+        name = NAME
+        birthday = BIRTHDAY
+        friendCount = FRIENDCOUNT
+        relationStatus = RELATIONSTATUS
+    }
     
     //Step 1: Print your friendCount for your object to see if your initializer works.
+    
     //Step 2: Print your relationshipStatus for your object to see if your initializer works.
+    
     //Step 3: Push Iteration 1 to GitHub.
     
     
@@ -85,11 +98,14 @@ class FacebookProfile {
 //Test Iterations Here
 
 //Iteration 0 Test
-facebook = FacebookProfile()
+//var profile0 = FacebookProfile(USERNAME: "bobo", LOCATION: "boboklyn", STATUS: "boboing along", AGE: 6060, NAME: "Bobo", BIRTHDAY: "Bobember Birst", FRIENDCOUNT: 6060, RELATIONSTATUS: "BINGLE")
 
 //Iteration 1 Test
+var profile1 = FacebookProfile(USERNAME: "ellai", LOCATION: "brooklyn", STATUS: "chillin", AGE: 16, NAME: "Ella", BIRTHDAY: "nov 1, 2002", FRIENDCOUNT: 23456789, RELATIONSTATUS: "single as a pringle")
 
+print(profile1.friendCount)
 
+print(profile1.relationStatus)
 //Iteration 2 Test
 
 
