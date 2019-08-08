@@ -1,8 +1,8 @@
 //FacebookClassChallenge
 class FacebookProfile {
     
-    //ITERATION 0: Variable properties and constant properties.
     
+    //ITERATION 0: Variable properties and constant properties.
     
     //Step 0: Create your attributes section--What is a facebook profile made of?
     /*****YOUR CODE GOES HERE*****/
@@ -21,6 +21,7 @@ class FacebookProfile {
     //Step 3: Print the object.
     
     //Step 4: Push Iteration 0 to GitHub.
+    
     
     
     
@@ -54,35 +55,40 @@ class FacebookProfile {
     //Step 0: Write a function that lets user update their bio
     /*****YOUR CODE GOES HERE*****/
     
-    func updateStatus (status : String) {
+    func updateStatus (STATUS : String) {
+        status = STATUS
         print("\(status)")
     }
     
     //Step 1: Write a function that lets user update their userName
     /*****YOUR CODE GOES HERE*****/
     
-    func updateUsername (username : String) {
+    func updateUsername (USERNAME : String) {
+        username = USERNAME
         print("\(username)")
     }
     
     //Step 2: Write a function that lets user update their friendCount
     /*****YOUR CODE GOES HERE*****/
     
-    func updateFriendCount (friendCount : Int) {
+    func updateFriendCount (FRIENDCOUNT : Int) {
+        friendCount = FRIENDCOUNT
         print("\(friendCount)")
     }
     
     //Step 3: Write a function that lets user update their birthday
     /*****YOUR CODE GOES HERE*****/
     
-    func updateBirthday (birthday : String) {
+    func updateBirthday (BIRTHDAY : String) {
+        birthday = BIRTHDAY
         print("\(birthday)")
     }
     
     //Step 4: Write a function that lets user update their relationshipStatus
     /*****YOUR CODE GOES HERE*****/
     
-    func updateRelationStatus (relationStatus : String) {
+    func updateRelationStatus (RELATIONSTATUS : String) {
+        relationStatus = RELATIONSTATUS
         print("\(relationStatus)")
     }
     
@@ -93,17 +99,36 @@ class FacebookProfile {
     
     
     
-    
     //ITERATION 3: Functions that lets the user check their facebook profile informantion -- -- In other languages, these are sometimes called "Getter" Functions.
     
     //Step 0: Write a function that lets user check their bio
     /*****YOUR CODE GOES HERE*****/
     
+    func checkStatus(){
+        print("Your current status: \(status)")
+    }
+    
     //Step 1: Write a function that lets user check their userName
     /*****YOUR CODE GOES HERE*****/
     
+    func checkUsername(){
+        print("Your current username: \(username)")
+    }
+    
     //Step 2-4: Write the rest of the wrapper functions for: friendCount, birthday, relationshipStatus
     /*****YOUR CODE GOES HERE*****/
+    
+    func checkFriendCount(){
+        print("Your current Friend Count: \(friendCount)")
+    }
+    
+    func checkBirthday(){
+        print("Your current birthday is: \(birthday)")
+    }
+    
+    func checkRelationStatus(){
+        print("Your current relationship status is: \(relationStatus)")
+    }
     
     //Step 5: "Get" the facebook profile information by calling these functions to make sure that they work.
     //Step 6: Push Iteration 3 to GitHub.
@@ -128,11 +153,19 @@ print(profile1.relationStatus)
 
 print("")
 //Iteration 2 Test
-profile1.updateFriendCount(friendCount: 100)
-profile1.updateUsername(username: "eri")
-profile1.updateRelationStatus(relationStatus: "FINESSINNNNNN'...")
-profile1.updateBirthday(birthday: "idk bro, nov 76th. 2056")
-profile1.updateStatus(status: "chi")
+profile1.updateFriendCount(FRIENDCOUNT: 12345)
+profile1.updateUsername(USERNAME: "eri")
+profile1.updateRelationStatus(RELATIONSTATUS: "single? idk bro")
+profile1.updateBirthday(BIRTHDAY: "11.01.2002")
+profile1.updateStatus(STATUS: "AGHHHHH")
+
+print("")
+
+profile1.checkStatus()
+profile1.checkBirthday()
+profile1.checkUsername()
+profile1.checkRelationStatus()
+profile1.checkFriendCount()
 
 
 //Iteration 3 Test
