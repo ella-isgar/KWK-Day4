@@ -133,8 +133,7 @@ class FacebookProfile {
     //Step 5: "Get" the facebook profile information by calling these functions to make sure that they work.
     //Step 6: Push Iteration 3 to GitHub.
     
-    
-    
+
     
     
 }
@@ -159,16 +158,15 @@ profile1.updateRelationStatus(RELATIONSTATUS: "single? idk bro")
 profile1.updateBirthday(BIRTHDAY: "11.01.2002")
 profile1.updateStatus(STATUS: "AGHHHHH")
 
-print("")
 
+print("")
+//Iteration 3 Test
 profile1.checkStatus()
 profile1.checkBirthday()
 profile1.checkUsername()
 profile1.checkRelationStatus()
 profile1.checkFriendCount()
 
-
-//Iteration 3 Test
 
 
 //Challenge: "Iteration 4" -- Edit your facebook class so Iterations 1, 2, and 3 also include friendList

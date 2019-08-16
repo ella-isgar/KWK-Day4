@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fakeInstagramPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-4W-4bg">
+                                <rect key="frame" x="0.0" y="44" width="336" height="44"/>
+                                <items>
+                                    <navigationItem title="Fake Instagram" id="1Rn-sA-L9U">
+                                        <barButtonItem key="rightBarButtonItem" title="NEXT" id="MTX-Uj-lSQ">
+                                            <connections>
+                                                <segue destination="iIg-M7-KzA" kind="show" id="GkX-ar-dPv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peytoncopeland" translatesAutoresizingMaskIntoConstraints="NO" id="2HX-5k-RPy">
+                                <rect key="frame" x="-922" y="156" width="2219" height="365"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="365" id="k3C-Vl-cC4"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="PEYTON COPELAND" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-Ih-2n5">
+                                <rect key="frame" x="70" y="559" width="235" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2HX-5k-RPy" firstAttribute="centerX" secondItem="G3S-4W-4bg" secondAttribute="centerX" id="Axh-AW-Ji1"/>
+                            <constraint firstItem="QSV-Ih-2n5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="BrE-aU-Nbj"/>
+                            <constraint firstItem="QSV-Ih-2n5" firstAttribute="top" secondItem="2HX-5k-RPy" secondAttribute="bottom" constant="38" id="CM8-cU-ruT"/>
+                            <constraint firstItem="2HX-5k-RPy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rv7-Mh-frY"/>
+                            <constraint firstItem="2HX-5k-RPy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="156" id="VQA-5R-08l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QSV-Ih-2n5" secondAttribute="trailing" constant="70" id="hb8-fR-ByE"/>
+                            <constraint firstItem="2HX-5k-RPy" firstAttribute="top" secondItem="G3S-4W-4bg" secondAttribute="bottom" constant="68" id="x9B-Lh-Ay4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kty-OA-iwu">
+            <objects>
+                <viewController id="iIg-M7-KzA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjq-s7-KJK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-4I-RPi">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fake Instagram" id="KRr-i8-SjJ">
+                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="fED-6f-z47">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="dpt-mC-nTs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MUc-UL-0rt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1p-wC-hPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="peytoncopeland" width="2219" height="2565"/>
+    </resources>
+</document>
